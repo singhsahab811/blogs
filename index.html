@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Josh Blogs
+        </title>
+   
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" href ="images/pic.png" type = "image/x-icon">
+        <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="responsiv.css">
+    </head>
+    <body >
+        <!--Navbar-->
+        <header class="topnav">
+                <div class="head">
+                    <div class="lefthead">
+                        <img  class="logo"src="images/pic.png" alt="mylogo" >
+                        <img  class="text"src="images/JTGPOD@2x.png" alt="mylogo" >
+                    </div>
+                    <button onclick="myFunction()" class="dropbtn">
+                        <div class="dropLine"></div>
+                        <div class="dropLine"></div>
+                        <div class="dropLine"></div>
+                    </button>
+                    <div class="righthead" id="myDropdown">                        
+                        <a target="_blank" class="navigation" href="index.html" id="home">Home</a>
+                        <a target="_blank" href="#" class="navigation">About</a>
+                        <a target="_blank" href="#" class="navigation">Blog</a>
+                        <a target="_blank" href="#" class="navigation">Pages</a>
+                        <a target="_blank" href="#" class="navigation">Contact</a>
+                        <input for="subscribe" type="button" onclick="newPage()" class="subscribe" style="margin-left: 8%;" value="Subscribe">
+                    
+                    </div>
+                </div> 
+                <div class="topcontent">
+                    <div class="left" style="margin-left: 8%;">
+                        <section class="headtag" >
+                            <div class="hl" ></div>&nbsp;&nbsp;<h6 style="color: orangered;">Trending Blog</h6>
+                        </section>
+                        <h1 id="headline" >
+                            Dreams of an unique ideas
+                            scattered through a
+                            deserted.</h1>
+                        <p  id="headdetails">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus culpa id consequatur
+                            eum distinctio. Numquam, mollitia magnam sed cumque rerum aut nostrum possimus dolores.
+                        </p>
+                        <input for="exploreMore" onclick="newPage()" type="submit" class="explore" value="Explore">
+                    </div>
+                    
+                </div> 
+              
+        </header>
+
+            <!--Bloglist-->
+        <div class="blogslist">
+            <div id="latest">
+                <h2 style="margin-left: 5%;">Latest Blogs</h2>
+                <input type="button" for="viewAll" class="viewall" value="View All">
+            </div>
+            <div class="blogs" style="margin-top: 3%;">
+                <figure>
+                    <img  class="blogsimg "src="images/2123.png" alt="JTGPOD Latest Blog1a" >
+                </figure>
+                <div class="content">
+                    <h5 class="blog-head">Visiting my best friend's city for first time</h5>
+                    <p class="blog-details">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus culpa id consequatur 
+                        eum distinctio. Numquam, mollitia magnam sed cumque rerum aut nostrum.
+                    </p>
+                    <input type="submit" onclick="newPage()" class="view" value="View">
+                </div>
+                <div class="vl"></div>
+                <figcaption class="hashtag">
+                    <p># Season 1</p>
+                    <p># Posted on Sep 3, 2020</p>
+                    <p># audio / goodbyes /life</p>
+                </figcaption>
+            </div>
+            <div class="blogs">
+                <figure>
+                    <img  class="blogsimg "src="images/hello-revival-YH_Ne4R9ZAc-unsplash.png" alt="JTGPOD Latest Blog1a" >
+                </figure>
+                <section class="content">
+                        <h5 class="blog-head">An interesting read I definitely recommend</h5>
+                    <p class="blog-details">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus culpa id consequatur
+                        eum distinctio. Numquam, mollitia magnam sed cumque rerum aut nostrum.
+                    </p>
+                    <input type="button" onclick="newPage()" class="view" value="View">
+                </section>
+                <div class="vl"></div>
+                <figcaption class="hashtag">
+                    <p># Season 1</p>
+                    <p># Posted on July 29, 2020</p>
+                    <p># goodbyes /life</p>
+                </figcaption>
+            </div>
+            <div class="blogs">
+                <figure>
+                    <img  class="blogsimg "src="images/alexander-tsang-_frvdyMH6S0-unsplash.png" alt="JTGPOD Latest Blog1a" >
+                </figure>
+                <section class="content">
+                        <h5 class="blog-head">What if all my adventures go back home?</h5>                    
+                    <p class="blog-details">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus culpa id consequatur
+                        eum distinctio. Numquam, mollitia magnam sed cumque rerum aut nostrum.
+                    </p>
+                    <input type="button" onclick="newPage()" class="view" width="20" value="View">
+                </section>
+                <div class="vl"></div>
+                <figcaption class="hashtag">
+                    <p># Season 1</p>
+                    <p># Posted on Sep 11, 2020</p>
+                    <p># audio / goodbyes</p>
+                </figcaption>
+            </div>
+                <input type="button" class="exmore" onclick="newPage()" value="Show More Episode">
+            </div>
+            
+        </div>
+
+            <!--Blog Caousel-->
+            <div class="carousel-section">
+                <h2 >Blog Post</h2>
+                <div class="slideshow" id="carousel">
+                    
+                    <section class="slides" id="slide2">
+                        <h6>By Mehedi Hasan <span id="date">&nbsp;Sep 11,2020</span></h6>
+                        <p class="cast">Cantonese Radio</p>
+                        <h5 >
+                            Global News Podcast Thai
+                            soldier kills many people
+                            a shooting rampage
+                        </h5>
+                        <p class="post-details">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Minus culpa id consequatur
+                            eum distinctio. Numquam, mollitia..........
+                        </p>
+                        <input type="button" class="readMore" onclick="newPage()" value="Read More ">
+                    </section> 
+                    <section class="slides" id="slide3">
+                        <h6>By Mehedi Hasan <span id="date">&nbsp;Sep 11,2020</span></h6>
+                        <p class="cast">Cantonese Radio</p>
+                        <h5 >
+                            News hour - World Health
+                            Organization says a new
+                            coronavirus cases
+                        </h5>
+                        <p class="post-details">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Minus culpa id consequatur
+                            eum distinctio. Numquam, mollitia..........
+                        </p>
+                        <input type="button" class="readMore" onclick="newPage()" value="Read More ">
+                    </section>
+                    <section class="slides" id="slide4">
+                        <h6>By Mehedi Hasan <span id="date">&nbsp;Sep 11,2020</span></h6>
+                        <p class="cast">Cantonese Radio</p>
+                        <h5>
+                            Over to You - Programme
+                            face the axe substansial 
+                            financial cutbacks
+                        </h5>
+                        <p class="post-details">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Minus culpa id consequatur
+                            eum distinctio. Numquam, mollitia..........
+                        </p>
+                        <input type="button" class="readMore" onclick="newPage()" value="Read More ">
+                    </section>
+                </div>
+                <div class="arrows">
+                    <img src="images/arrow-left.png" onclick="plusSlides(-1)"  id="arrow-left" alt="Left Arrow">&emsp;
+                    <img src="images/arrow-right.png" onclick="minusSlides(1)" id="arrow-right" alt="Right arrow">
+                </div>
+            </div>
+            
+        <!--Instagrams Feeds-->
+        <div class="feeds">
+            <h2>Instagram Feeds</h2>
+            <div class="grid-container">
+                    <img  class="grid-item" src="images/75095.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" id="item2" src="images/2857.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" src="images/451.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" src="images/15.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" src="images/mike-dorner-sf_1ZDA1YFw-unsplash.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" src="images/markus-spiske-UJwcQ3xeFHo-unsplash.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" id="item7" src="images/1670.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" src="images/1683.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" src="images/sina-katirachi-sj5nVJSfYl4-unsplash.png" alt="JTGPOD Latest Blog1a" >
+                    <img  class="grid-item" src="images/1841.png" alt="JTGPOD Latest Blog1a" >                
+            </div>
+        </div>
+
+        <!--Subscription-->
+        <div class="subscription">
+            <h2 id="newBlog">New Blog Every Week!</h2>
+            <p class="details">
+                Lipsum dolor sit amet consectetur adipisicing elit. Asperiores, cumque sit! Reiciendis
+                esse labore quia, tempore excepturi vero explicabo cum sunt at molestiae quamksfh.
+            </p>
+            <section>
+                <input type="email" id="email"  placeholder="Type Email Address">
+                <input for="subscribe" type="button" id="subscribe" onclick="subscribe()" value="Subscirbe">
+            </section>
+        </div>
+
+        <!--FOOTER -->
+        <footer >
+                <div class="botnav-content">
+                    <div class="fun">
+                        <div class="lefthead">
+                            <img  class="logo"src="images/pic.png" alt="mylogo" >
+                            <img  class="text"src="images/JTGPOD@2x.png" alt="mylogo" >
+                        </div>
+                        <p id="foot-details">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam iure
+                            officia vero qui tempora quas, quisquam magnam adipisci eveniet.
+                        </p>
+                        <h6 style="margin-bottom: 0px;margin-top: 9px;">Social</h6>
+                        <div class="social-icons">
+                            <a target="_blank" href="YOUR URL"><img id="fb" src="images/facebook.png" alt="Facebook"></a>
+                            <a target="_blank" href="YOUR URL"><img id="linkedin" src="images/linkedin.png" alt="Linkedin"></a>
+                            <a target="_blank" href="YOUR URL"><img id="insta" src="images/instagram.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                    <div class="footbar-pages">
+                        <ul><h6>Pages</h6>
+                            <li class="starter"><a href="#">About</a></li>
+                            <li class="starter-list"><a href="#">Episodes</a></li>
+                            <li class="starter-list"><a href="#">Blog</a></li>
+                            <li class="starter-list"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="recent-blogs">
+                        <ul><h6>Recent Blogs</h6>
+                            <li class="starter"><a href="#">Blog 1</a></li>
+                            <li class="starter-list"><a href="#">Blog 2</a></li>
+                            <li class="starter-list"><a href="#">Blog 3</a></li>
+                            <li class="starter-list"><a href="#">Blog 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="partners">
+                        <ul><h6>Partners</h6>
+                            <li class="starter">
+                                <a  target="_blank" href="YOUR GOOGLE PODCASTS URL" id="partners-google" >Listen on Google Podcasts</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="YOUR APPLE PODCASTS URL" id="partners-apple" >Listen on Apple Podcasts</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="YOUR SPOTIFY URL" id="partners-spotify" >Listen on Spotify</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="botnav">
+                    <div id="foot-line"></div>
+                    <h6 id="copyright">©️2020 JOSH TECHNOLGY GROUP</h6>
+                </div>
+                
+            <footer>
+    </body>
+</html>

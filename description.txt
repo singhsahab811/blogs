@@ -1,0 +1,2 @@
+-> Webpage is mobile responsive, slider may not work in mobile version else everything is working
+->Instagram feed didn't have spaces as the images provided to us have border shadow thats why there are gaps
